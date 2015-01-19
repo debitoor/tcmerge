@@ -1,0 +1,29 @@
+{
+  "name": "tcmerge",
+  "version": "1.0.1",
+  "description": "Command line tool, making it easier for developers to merge to master, when using the e-conmic/teamcity-merge script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/e-conomic/tcmerge.git"
+  },
+  "keywords": [
+    "git",
+    "merge",
+    "master",
+    "github",
+    "teamcity"
+  ],
+  "bin": {
+    "tcmerge": "./index.js"
+  },
+  "author": "E-conomic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/e-conomic/tcmerge/issues"
+  },
+  "homepage": "https://github.com/e-conomic/tcmerge"
+}
