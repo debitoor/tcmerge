@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 var execFile = require('child_process').execFile;
-
 if (process.argv.length !== 3) {
 	console.error('USAGE:\ntcmerge "commit message for merge commit"');
 	process.exit(1);
 }
-var commitMessage = process.argv[2]
-var readyBranch = 'ready/' + commitMessage.replace(/\s/g, '_');
+var commitMessage = process.argv[2];
+var timestamp = Math.round(Date.now()/1000) +'s';
+var readyBranch = 'ready/' + commitMessage.replace(/\s/g, '_') + '/' + timestamp;
 
 //http://stackoverflow.com/questions/12093748/how-do-i-check-for-valid-git-branch-names
 var validBranchNameRegExp = /^(?!build-|\/|.*([\/.]\.|\/\/|@\{|\\))[^\040\177 ~^:?*[]+\/[^\040\177 ~^:?*[]+$/;
@@ -22,6 +22,7 @@ execFileWithOutput('sh', [path.join(__dirname, 'lookupPullRequest.sh')], functio
 	}
 	return execFile('git', ['rev-parse', '--abbrev-ref', 'HEAD'], function (err, stdout, stderr) {
 		if (err) {
+			stderr && console.error(stderr);
 			process.exit(1);
 		}
 		var currentBranch = stdout.replace(/\s/g, '');
