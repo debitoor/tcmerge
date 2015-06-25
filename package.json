@@ -1,6 +1,6 @@
 {
   "name": "tcmerge",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Command line tool, making it easier for developers to merge to master, when using the e-conmic/teamcity-merge script",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,8 @@
     "teamcity"
   ],
   "bin": {
-    "tcmerge": "./index.js"
+    "tcmerge": "./index.js",
+    "prod": "./prod.sh"
   },
   "author": "E-conomic",
   "license": "MIT",

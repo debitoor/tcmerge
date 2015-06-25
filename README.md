@@ -18,3 +18,18 @@ on github. And you have to have pushed your commits to the pull request branch o
 `tcmerge`
 - Will detect if you do not have a pull request for your branch. And give an error.
 - Will detect if the pull request branch on github does not have the same commit as your current branch. And give an error
+
+# Prod
+Also this module contais command `prod`
+
+Requires [HUB](https://hub.github.com/)
+
+`brew install hub`
+
+#usage 
+
+```
+> prod "hotfix-that-is-ready-go-prod"
+```
+
+notice that prod accepts only valid branch name that will be used as branch name, commit and PR
