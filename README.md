@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/tcmerge.svg)](http://badge.fury.io/js/tcmerge)
 # tcmerge
 A command line tool making merge to master through [teamcity-merge](https://github.com/e-conomic/teamcity-merge)
 script easier for the developer. Before using this you should set up [teamcity-merge](https://github.com/e-conomic/teamcity-merge)
