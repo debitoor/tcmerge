@@ -1,7 +1,7 @@
 {
   "name": "tcmerge",
   "version": "2.1.0",
-  "description": "Command line tool, making it easier for developers to merge to master, when using the e-conmic/teamcity-merge script",
+  "description": "Command line tool, making it easier for developers to merge to master, when using the debitoor/teamcity-merge script",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,10 +21,10 @@
     "tcmerge": "./index.js",
     "prod": "./prod.sh"
   },
-  "author": "E-conomic",
+  "author": "Debitoor",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/e-conomic/tcmerge/issues"
+    "url": "https://github.com/debitoor/debitoor/issues"
   },
-  "homepage": "https://github.com/e-conomic/tcmerge"
+  "homepage": "https://github.com/debitoor/tcmerge"
 }
