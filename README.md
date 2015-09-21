@@ -2,12 +2,12 @@
 A command line tool making merge to master through [teamcity-merge](https://github.com/e-conomic/teamcity-merge)
 script easier for the developer. Before using this you should set up [teamcity-merge](https://github.com/e-conomic/teamcity-merge)
 
-# Installing
+## Installing
 ```
 npm install -g tcmerge
 ```
 
-# Usage
+## Usage
 ```
 > tcmerge "My awesome feature is done, it solves all kinds of problems"
 ```
@@ -26,7 +26,7 @@ Requires [HUB](https://hub.github.com/)
 
 `brew install hub`
 
-#usage 
+## Usage 
 
 ```
 > prod "hotfix-that-is-ready-go-prod"
