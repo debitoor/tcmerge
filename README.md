@@ -43,7 +43,7 @@ Repeat as necessary.
 
 ##### 4. Push branch
 ``` bash
-git push --set-upstream origin merge-external-pull-request
+$ git push --set-upstream origin merge-external-pull-request
 ```
 
 ##### 5. Create a new pull request
