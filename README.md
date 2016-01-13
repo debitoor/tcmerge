@@ -53,8 +53,10 @@ $ hub pull-request -m "merge external pull request"
 
 ##### 6. Merge new pull request
 ``` bash
-$ tcmerge "merge-external-pull-request"
+$ tcmerge "merge-external-pull-request Fixes #[EXTERNAL_PULL_REQUEST_NUMBER]"
 ```
+
+That way the external PR will be closed when merge to master happens, and that merge commit will be linked to the external PR.
 
 # Prod
 Also this module contais command `prod`
