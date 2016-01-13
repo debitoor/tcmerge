@@ -41,12 +41,17 @@ $ git cherry-pick -x {commit id}
 
 Repeat as necessary.
 
-##### 4. Create a new pull request
+##### 4. Push branch
+``` bash
+git push --set-upstream origin merge-external-pull-request
+```
+
+##### 5. Create a new pull request
 ``` bash
 $ hub pull-request -m "merge external pull request"
 ```
 
-##### 5. Merge new pull request
+##### 6. Merge new pull request
 ``` bash
 $ tcmerge "merge-external-pull-request"
 ```
