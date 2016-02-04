@@ -1,6 +1,6 @@
 {
   "name": "tcmerge",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Command line tool, making it easier for developers to merge to master, when using the debitoor/teamcity-merge script",
   "main": "index.js",
   "scripts": {
