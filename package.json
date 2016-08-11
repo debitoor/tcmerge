@@ -19,7 +19,8 @@
   ],
   "bin": {
     "tcmerge": "./index.js",
-    "prod": "./prod.sh"
+    "prod": "./prod.sh",
+    "commit": "./commit.sh"
   },
   "author": "Debitoor",
   "license": "MIT",

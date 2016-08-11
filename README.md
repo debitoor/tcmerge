@@ -58,8 +58,8 @@ $ tcmerge "merge-external-pull-request Fixes #[EXTERNAL_PULL_REQUEST_NUMBER]"
 
 That way the external PR will be closed when merge to master happens, and that merge commit will be linked to the external PR.
 
-# Prod
-Also this module contais command `prod`
+# `prod
+This module also contains the command `prod`
 
 Requires [HUB](https://hub.github.com/)
 
@@ -67,8 +67,24 @@ Requires [HUB](https://hub.github.com/)
 
 ### Usage
 
+You are on master branch with uncommitted changes you want to deploy to production
+
 ```
-> prod "hotfix-that-is-ready-go-prod"
+> prod "hotfix that is ready to go straight to production"
 ```
 
-notice that prod accepts only valid branch name that will be used as branch name, commit and PR
+# `commit`
+This module also contains the command `commit`
+
+Requires [HUB](https://hub.github.com/)
+
+`brew install hub`
+
+### Usage
+
+You are on master branch with uncommitted changes you want to turn into a pull request
+
+```
+> commit "code changes that are ready to be made into a pull request"
+```
+
