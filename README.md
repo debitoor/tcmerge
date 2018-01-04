@@ -58,7 +58,8 @@ $ tcmerge "merge-external-pull-request Fixes #[EXTERNAL_PULL_REQUEST_NUMBER]"
 
 That way the external PR will be closed when merge to master happens, and that merge commit will be linked to the external PR.
 
-# `prod
+# `prod`
+
 This module also contains the command `prod`
 
 Requires [HUB](https://hub.github.com/)
@@ -74,6 +75,7 @@ You are on master branch with uncommitted changes you want to deploy to producti
 ```
 
 # `commit`
+
 This module also contains the command `commit`
 
 Requires [HUB](https://hub.github.com/)
